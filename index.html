@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Games</title>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <h1 id="heading">Add games</h1>
+    <form id=form>
+        <label for="game_name" >Name:</label>
+        <input type="text" id = "game_name">
+        <label for="release_date">Release date:</label>
+        <input type="date" id = "release_date">
+        <label for=publisher >Publisher:</label>
+        <input type="text" id ="publisher">
+        <label for="developer" >devleoper</label>
+        <input type="text" id = "developer">
+        <label for="age_rating">PEGI age rating</label>
+        <select name="PEGI age rating" id="age_rating">
+            <option value="3" >3</option>
+            <option value="7" >7</option>
+            <option value="12" >12</option>
+            <option value="16" >16</option>
+            <option value="18" >18</option>
+        </select>
+        <label for=coop>coop</label>
+        <input type="checkbox" id = coop>
+        <label for="multiplayer" >Multiplayer</label>
+        <input type="checkbox"  id = "multiplayer">
+        <button type="submit" id="submit_game">Submit Game</button>
+</form>
+ <ul id= list-games></ul>
+
+
+ <button id = "delete-all" type="button">Delete</button>
+</body>
+</html>
